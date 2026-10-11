@@ -11,16 +11,16 @@
 <body>
     <header class="header">
         <div class="container header-inner">
-        <a class="logo" href="index.html">Открой Оренбуржье</a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#search">Поиск достопримечательностей</a></li>
-                <li><a href="login.html">Войти</a></li>
-                <li><a href="register.html">Регистрация</a></li>
-                <li><a href="profile.html">Личный кабинет</a></li>
-                <li><a href="catalog.html">Каталог достопримечательностей</a></li> ...
-            </ul>
-        </nav>
+            <a class="logo" href="index.html">Открой Оренбуржье</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#search">Поиск достопримечательностей</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                    <li><a href="catalog.html">Каталог достопримечательностей</a></li> ...
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -30,7 +30,22 @@
                 <p>Это сайт-каталог достопремичательностей Оренбургской области, куда пользователи сами добавляют места
                 </p>
             </div>
-        </section>
+            <section class="search" id="search">
+                <div class="container">
+                    <h2>Быстрый поиск</h2>
+                    <form class="search-form" action="catalog.html" method="get">
+                        <label for="search-input">Категория или название</label>
+                        <input type="text" id="search-input name=" q" list="categories" placeholder="Музеи">
+                        <datalist id="categories">
+                            <option value="Музеи">
+                            <option value="Природные объекты">
+                            <option value="Исторические места">
+                            <option value="Памятники архитектуры">
+                        </datalist>
+                        <button type="submit">Найти</button>
+                    </form>
+                </div>
+            </section>
     </main>
 </body>
 
