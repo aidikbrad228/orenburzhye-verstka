@@ -137,3 +137,65 @@ p {
 .feature:hover {
     transform: translateY(-4px);
 }
+
+.popular {
+    padding: 32px 0;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.landmark-card {
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.landmark-card:hover {
+    transform: translateY(-4px);
+}
+
+.landmark-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.landmark-card-body {
+    padding: 20px;
+}
+
+.landmark-card h3 {
+    color: var(--main);
+    margin: 0 0 8px;
+}
+
+.landmark-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.stars {
+    color: var(--accent);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--text);
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #D0954F;
+}
