@@ -1,28 +1,36 @@
 :root {
     /* Цветовая палитра: Isle of Man green + бронза, светлая тема */
-    --bg: #F4F1EA;   
-    --surface: #FFFFFF;  
-    --main: #123D2F;     
-    --accent: #C08A45;   
-    --text: #1C2420;     
-    --muted: #5C6660;    
-    --line: #DAD4C6;     
+    --bg: #F4F1EA;
+    --surface: #FFFFFF;
+    --main: #123D2F;
+    --accent: #C08A45;
+    --text: #1C2420;
+    --muted: #5C6660;
+    --line: #DAD4C6;
 
 }
+
 body {
     background-color: var(--bg);
     color: var(--text);
     font-family: Arial, sans-serif;
+    margin: 0;
 }
+
 h1 {
     color: var(--main);
     font-size: 46px;
 }
+
 p {
     color: var(--text);
     font-size: 20px;
 }
+
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--main);
     padding: 16px 24px;
 }
@@ -32,4 +40,19 @@ p {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
+}
+.nav-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-list a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-list a:hover {
+    color: var(--accent);
 }
