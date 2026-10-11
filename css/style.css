@@ -28,11 +28,8 @@ p {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--main);
-    padding: 16px 24px;
+    padding: 16px 0;
 }
 
 .logo {
@@ -41,6 +38,7 @@ p {
     font-size: 24px;
     font-weight: bold;
 }
+
 .nav-list {
     display: flex;
     gap: 24px;
@@ -48,11 +46,29 @@ p {
     margin: 0;
     padding: 0;
 }
+
 .nav-list a {
     color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s;
 }
+
 .nav-list a:hover {
     color: var(--accent);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    padding: 64px 0;
 }
