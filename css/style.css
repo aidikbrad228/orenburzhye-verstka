@@ -1,13 +1,13 @@
 :root {
     /* Цветовая палитра: Isle of Man green + бронза, светлая тема */
-    --bg: #F4F1EA;       
+    --bg: #F4F1EA;   
     --surface: #FFFFFF;  
     --main: #123D2F;     
     --accent: #C08A45;   
     --text: #1C2420;     
     --muted: #5C6660;    
     --line: #DAD4C6;     
-
+    
 }
 body {
     background-color: var(--bg);
