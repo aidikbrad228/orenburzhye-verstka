@@ -1,13 +1,24 @@
+:root {
+    /* Цветовая палитра: Isle of Man green + бронза, светлая тема */
+    --bg: #F4F1EA;       
+    --surface: #FFFFFF;  
+    --main: #123D2F;     
+    --accent: #C08A45;   
+    --text: #1C2420;     
+    --muted: #5C6660;    
+    --line: #DAD4C6;     
+
+}
 body {
-    background-color: #F4F1EA;
-    color: #333333;
+    background-color: var(--bg);
+    color: var(--text);
     font-family: Arial, sans-serif;
 }
 h1 {
-    color: #123D2F;
+    color: var(--main);
     font-size: 46px;
 }
 p {
-    color:#1C2420;
+    color: var(--text);
     font-size: 20px;
 }
