@@ -84,14 +84,11 @@ p {
 }
 
 .search-form input {
+    border: 1px solid var(--line);
     flex: 1;
     padding: 12px 16px;
     border-radius: 8px;
     font-size: 16px;
-}
-
-.search-form button:hover {
-    background-color: #D0954F;
 }
 
 .search-form button {
@@ -103,6 +100,10 @@ p {
     border: none;
     border-radius: 8px;
     transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #D0954F;
 }
 
 .features {
@@ -121,6 +122,7 @@ p {
     border-radius: 12px;
     padding: 24px;
     text-align: center;
+    transition: transform 0.3s;
 }
 
 .feature img {
@@ -130,7 +132,6 @@ p {
 .feature h3 {
     color: var(--main);
     font-size: 18px;
-    transition: transform 0.3s;
 }
 
 .feature:hover {
