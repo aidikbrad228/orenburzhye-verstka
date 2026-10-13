@@ -18,7 +18,7 @@
                     <li><a href="login.html">Войти</a></li>
                     <li><a href="register.html">Регистрация</a></li>
                     <li><a href="profile.html">Личный кабинет</a></li>
-                    <li><a href="catalog.html">Каталог достопримечательностей</a></li> ...
+                    <li><a href="catalog.html">Каталог достопримечательностей</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,186 +30,187 @@
                 <p>Это сайт-каталог достопремичательностей Оренбургской области, куда пользователи сами добавляют места
                 </p>
             </div>
-            <section class="search" id="search">
-                <div class="container">
-                    <h2>Быстрый поиск</h2>
-                    <form class="search-form" action="catalog.html" method="get">
-                        <label for="search-input">Категория или название</label>
-                        <input type="text" id="search-input name=" q" list="categories" placeholder="Музеи">
-                        <datalist id="categories">
-                            <option value="Музеи">
-                            <option value="Природные объекты">
-                            <option value="Исторические места">
-                            <option value="Памятники архитектуры">
-                        </datalist>
-                        <button type="submit">Найти</button>
-                    </form>
-                </div>
-            </section>
-            <section class="features">
-                <div class="container">
-                    <h2>Преимущества платформы</h2>
-                    <div class="features-grid">
-                        <div class="feature">
-                            <img src="img/icon-photo.svg" alt="">
-                            <h3>Удобная загрузка фотографий</h3>
-                            <p>Добавляйте несколько снимков достопримечательности за один раз.</p>
-                        </div>
-                        <div class="feature">
-                            <img src="img/icon-map.svg" alt="">
-                            <h3>Точные координаты на карте</h3>
-                            <p>Каждое место сопровождается широтой и долготой.</p>
-                        </div>
-                        <div class="feature">
-                            <img src="img/icon-text.svg" alt="">
-                            <h3>Подробные описания от местных жителей</h3>
-                            <p>Краеведы и жители делятся историей и деталями о своём крае.</p>
-                        </div>
-                        <div class="feature">
-                            <img src="img/icon-reviews.svg" alt="">
-                            <h3>Актуальная информация и отзывы путешественников</h3>
-                            <p>Оценки и комментарии помогают выбрать, что посетить.</p>
-                        </div>
+        </section>
+        <section class="search" id="search">
+            <div class="container">
+                <h2>Быстрый поиск</h2>
+                <form class="search-form" action="catalog.html" method="get">
+                    <label for="search-input">Категория или название</label>
+                    <input type="text" id="search-input name=" q" list="categories" placeholder="Музеи">
+                    <datalist id="categories">
+                        <option value="Музеи">
+                        <option value="Природные объекты">
+                        <option value="Исторические места">
+                        <option value="Памятники архитектуры">
+                    </datalist>
+                    <button type="submit">Найти</button>
+                </form>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2>Преимущества платформы</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <img src="img/icon-photo.svg" alt="">
+                        <h3>Удобная загрузка фотографий</h3>
+                        <p>Добавляйте несколько снимков достопримечательности за один раз.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="img/icon-map.svg" alt="">
+                        <h3>Точные координаты на карте</h3>
+                        <p>Каждое место сопровождается широтой и долготой.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="img/icon-text.svg" alt="">
+                        <h3>Подробные описания от местных жителей</h3>
+                        <p>Краеведы и жители делятся историей и деталями о своём крае.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="img/icon-reviews.svg" alt="">
+                        <h3>Актуальная информация и отзывы путешественников</h3>
+                        <p>Оценки и комментарии помогают выбрать, что посетить.</p>
                     </div>
                 </div>
-            </section>
-            <section class="popular">
-                <div class="container">
-                    <h2>Популярные достопримечательности</h2>
-                    <div class="cards-grid">
-                        <article class="landmark-card">
-                            <img src="img/01_sol_iletsk_ozero.jpg" alt="Солёное озеро рядом с Соль-Илецком">
-                            <div class="landmark-card-body">
+            </div>
+        </section>
+        <section class="popular">
+            <div class="container">
+                <h2>Популярные достопримечательности</h2>
+                <div class="cards-grid">
+                    <article class="landmark-card">
+                        <img src="img/01_sol_iletsk_ozero.jpg" alt="Солёное озеро рядом с Соль-Илецком">
+                        <div class="landmark-card-body">
+                            <h3>Соль-Илецкие озёра</h3>
+                            <p>Природный объект</p>
+                            <ul>
+                                <li>Автор: Мария К.</li>
+                                <li>Район: Соль-Илецкий округ</li>
+                                <li>Координаты: 51.1503° с. ш., 55.0027° в. д.</li>
+                                <li>Рейтинг: <span class="stars">★★★★☆</span> (167)</li>
+                                <li>Фото: 9</li>
+                            </ul>
+                            <a class="btn" href="landmark.html">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="landmark-card">
+                        <img src="img/02_buzuluksky_bor.jpg" alt="Сосновый лес Бузулукского бора">
+                        <div class="landmark-card-body">
+                            <h3>Бузулукский бор</h3>
+                            <p>Природный объект</p>
+                            <ul>
+                                <li>Автор: Алексей М.</li>
+                                <li>Район: Бузулукский район</li>
+                                <li>Координаты: 52.9977° с. ш., 52.1362° в. д.</li>
+                                <li>Рейтинг: <span class="stars">★★★★★</span> (214)</li>
+                                <li>Фото: 12</li>
+                            </ul>
+                            <a class="btn" href="landmark.html">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="landmark-card">
+                        <img src="img/03_mechet_karavan_saray.jpg" alt="Мечеть Караван-Сарай в Оренбурге">
+                        <div class="landmark-card-body">
+                            <h3>Мечеть Караван-Сарай</h3>
+                            <p>Религиозное сооружение</p>
+                            <ul>
+                                <li>Автор: Ренат Х.</li>
+                                <li>Район: Оренбург</li>
+                                <li>Координаты: 51.7714° с. ш., 55.0931° в. д.</li>
+                                <li>Рейтинг: <span class="stars">★★★★★</span> (98)</li>
+                                <li>Фото: 7</li>
+                            </ul>
+                            <a class="btn" href="landmark.html">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="landmark-card">
+                        <img src="img/04_istoriko_kraevedchesky_muzey.jpg"
+                            alt="Здание Оренбургского губернаторского историко-краеведческого музея">
+                        <div class="landmark-card-body">
+                            <h3>Оренбургский губернаторский историко-краеведческий музей</h3>
+                            <p>Музей</p>
+                            <ul>
+                                <li>Автор: Ольга С.</li>
+                                <li>Район: Оренбург</li>
+                                <li>Координаты: 51.7621° с. ш., 55.1022° в. д.</li>
+                                <li>Рейтинг: <span class="stars">★★★★☆</span> (121)</li>
+                                <li>Фото: 15</li>
+                            </ul>
+                            <a class="btn" href="landmark.html">Подробнее</a>
+                        </div>
+                    </article>
+                    <article class="landmark-card">
+                        <img src="img/05_evropa_aziya.jpg" alt="Памятник «Европа — Азия» на берегу реки Урал">
+                        <div class="landmark-card-body">
+                            <h3>Памятник «Европа — Азия»</h3>
+                            <p>Памятник архитектуры</p>
+                            <ul>
+                                <li>Автор: Дмитрий П.</li>
+                                <li>Район: Оренбург</li>
+                                <li>Координаты: 51.7498° с. ш., 55.0913° в. д.</li>
+                                <li>Рейтинг: <span class="stars">★★★★☆</span> (143)</li>
+                                <li>Фото: 6</li>
+                            </ul>
+                            <a class="btn" href="landmark.html">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <h2>Красоты Оренбуржья</h2>
+
+                <div class="slider">
+
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+
+                    <div class="slides">
+                        <article class="slide">
+                            <img src="img/01_sol_iletsk_ozero.jpg" alt="Соль-Илецкие озёра">
+                            <div class="slide-caption">
                                 <h3>Соль-Илецкие озёра</h3>
-                                <p>Природный объект</p>
-                                <ul>
-                                    <li>Автор: Мария К.</li>
-                                    <li>Район: Соль-Илецкий округ</li>
-                                    <li>Координаты: 51.1503° с. ш., 55.0027° в. д.</li>
-                                    <li>Рейтинг: <span class="stars">★★★★☆</span> (167)</li>
-                                    <li>Фото: 9</li>
-                                </ul>
-                                <a class="btn" href="landmark.html">Подробнее</a>
+                                <p>Солёные озёра с лечебной грязью, куда едут отдыхать и поправлять здоровье.</p>
                             </div>
                         </article>
-                        <article class="landmark-card">
-                            <img src="img/02_buzuluksky_bor.jpg" alt="Сосновый лес Бузулукского бора">
-                            <div class="landmark-card-body">
+
+                        <article class="slide">
+                            <img src="img/02_buzuluksky_bor.jpg" alt="Бузулукский бор">
+                            <div class="slide-caption">
                                 <h3>Бузулукский бор</h3>
-                                <p>Природный объект</p>
-                                <ul>
-                                    <li>Автор: Алексей М.</li>
-                                    <li>Район: Бузулукский район</li>
-                                    <li>Координаты: 52.9977° с. ш., 52.1362° в. д.</li>
-                                    <li>Рейтинг: <span class="stars">★★★★★</span> (214)</li>
-                                    <li>Фото: 12</li>
-                                </ul>
-                                <a class="btn" href="landmark.html">Подробнее</a>
+                                <p>Огромный сосновый лес на песчаных террасах реки Самара с экотропами.</p>
                             </div>
                         </article>
-                        <article class="landmark-card">
-                            <img src="img/03_mechet_karavan_saray.jpg" alt="Мечеть Караван-Сарай в Оренбурге">
-                            <div class="landmark-card-body">
+
+                        <article class="slide">
+                            <img src="img/03_mechet_karavan_saray.jpg" alt="Мечеть Караван-Сарай">
+                            <div class="slide-caption">
                                 <h3>Мечеть Караван-Сарай</h3>
-                                <p>Религиозное сооружение</p>
-                                <ul>
-                                    <li>Автор: Ренат Х.</li>
-                                    <li>Район: Оренбург</li>
-                                    <li>Координаты: 51.7714° с. ш., 55.0931° в. д.</li>
-                                    <li>Рейтинг: <span class="stars">★★★★★</span> (98)</li>
-                                    <li>Фото: 7</li>
-                                </ul>
-                                <a class="btn" href="landmark.html">Подробнее</a>
+                                <p>Памятник архитектуры Оренбурга, построенный в начале XX века.</p>
                             </div>
                         </article>
-                        <article class="landmark-card">
-                            <img src="img/04_istoriko_kraevedchesky_muzey.jpg"
-                                alt="Здание Оренбургского губернаторского историко-краеведческого музея">
-                            <div class="landmark-card-body">
-                                <h3>Оренбургский губернаторский историко-краеведческий музей</h3>
-                                <p>Музей</p>
-                                <ul>
-                                    <li>Автор: Ольга С.</li>
-                                    <li>Район: Оренбург</li>
-                                    <li>Координаты: 51.7621° с. ш., 55.1022° в. д.</li>
-                                    <li>Рейтинг: <span class="stars">★★★★☆</span> (121)</li>
-                                    <li>Фото: 15</li>
-                                </ul>
-                                <a class="btn" href="landmark.html">Подробнее</a>
-                            </div>
-                        </article>
-                        <article class="landmark-card">
-                            <img src="img/05_evropa_aziya.jpg" alt="Памятник «Европа — Азия» на берегу реки Урал">
-                            <div class="landmark-card-body">
-                                <h3>Памятник «Европа — Азия»</h3>
-                                <p>Памятник архитектуры</p>
-                                <ul>
-                                    <li>Автор: Дмитрий П.</li>
-                                    <li>Район: Оренбург</li>
-                                    <li>Координаты: 51.7498° с. ш., 55.0913° в. д.</li>
-                                    <li>Рейтинг: <span class="stars">★★★★☆</span> (143)</li>
-                                    <li>Фото: 6</li>
-                                </ul>
-                                <a class="btn" href="landmark.html">Подробнее</a>
+
+                        <article class="slide">
+                            <img src="img/04_istoriko_kraevedchesky_muzey.jpg" alt="Губернаторский музей">
+                            <div class="slide-caption">
+                                <h3>Губернаторский музей</h3>
+                                <p>Главный музей области, где собраны история и природа Оренбургского края.</p>
                             </div>
                         </article>
                     </div>
-                </div>
-            </section>
-            <section class="gallery">
-                <div class="container">
-                    <h2>Красоты Оренбуржья</h2>
 
-                    <div class="slider">
-
-                        <input type="radio" name="slider" id="slide1" checked>
-                        <input type="radio" name="slider" id="slide2">
-                        <input type="radio" name="slider" id="slide3">
-                        <input type="radio" name="slider" id="slide4">
-
-                        <div class="slides">
-                            <article class="slide">
-                                <img src="img/01_sol_iletsk_ozero.jpg" alt="Соль-Илецкие озёра">
-                                <div class="slide-caption">
-                                    <h3>Соль-Илецкие озёра</h3>
-                                    <p>Солёные озёра с лечебной грязью, куда едут отдыхать и поправлять здоровье.</p>
-                                </div>
-                            </article>
-
-                            <article class="slide">
-                                <img src="img/02_buzuluksky_bor.jpg" alt="Бузулукский бор">
-                                <div class="slide-caption">
-                                    <h3>Бузулукский бор</h3>
-                                    <p>Огромный сосновый лес на песчаных террасах реки Самара с экотропами.</p>
-                                </div>
-                            </article>
-
-                            <article class="slide">
-                                <img src="img/03_mechet_karavan_saray.jpg" alt="Мечеть Караван-Сарай">
-                                <div class="slide-caption">
-                                    <h3>Мечеть Караван-Сарай</h3>
-                                    <p>Памятник архитектуры Оренбурга, построенный в начале XX века.</p>
-                                </div>
-                            </article>
-
-                            <article class="slide">
-                                <img src="img/04_istoriko_kraevedchesky_muzey.jpg" alt="Губернаторский музей">
-                                <div class="slide-caption">
-                                    <h3>Губернаторский музей</h3>
-                                    <p>Главный музей области, где собраны история и природа Оренбургского края.</p>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="controls">
-                            <label for="slide1"></label>
-                            <label for="slide2"></label>
-                            <label for="slide3"></label>
-                            <label for="slide4"></label>
-                        </div>
+                    <div class="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
 
 </body>
