@@ -11,8 +11,18 @@
 <body>
     <header class="header">
         <div class="container header-inner">
-            <a class="logo" href="index.html">Открой Оренбуржье</a>
-            <nav class="nav">
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="" width="36" height="36">
+                <span>Открой Оренбуржье</span>
+            </a>
+
+            <input type="checkbox" id="burger-toggle" class="burger-toggle visually-hidden">
+            <label class="burger" for="burger-toggle">
+                <span class="burger-line"></span>
+                <span class="visually-hidden">Открыть меню</span>
+            </label>
+
+            <nav class="nav" aria-label="Основное меню">
                 <ul class="nav-list">
                     <li><a href="#search">Поиск достопримечательностей</a></li>
                     <li><a href="login.html">Войти</a></li>
@@ -23,20 +33,22 @@
             </nav>
         </div>
     </header>
+
     <main>
         <section class="hero">
             <div class="container">
                 <h1>Открой Оренбуржье</h1>
-                <p>Это сайт-каталог достопремичательностей Оренбургской области, куда пользователи сами добавляют места
+                <p>Это сайт-каталог достопримечательностей Оренбургской области, куда пользователи сами добавляют места
                 </p>
             </div>
         </section>
+
         <section class="search" id="search">
             <div class="container">
                 <h2>Быстрый поиск</h2>
                 <form class="search-form" action="catalog.html" method="get">
                     <label for="search-input">Категория или название</label>
-                    <input type="text" id="search-input name=" q" list="categories" placeholder="Музеи">
+                    <input type="text" id="search-input" name="q" list="categories" placeholder="Музеи">
                     <datalist id="categories">
                         <option value="Музеи">
                         <option value="Природные объекты">
@@ -47,6 +59,7 @@
                 </form>
             </div>
         </section>
+
         <section class="features">
             <div class="container">
                 <h2>Преимущества платформы</h2>
@@ -74,12 +87,13 @@
                 </div>
             </div>
         </section>
+
         <section class="popular">
             <div class="container">
                 <h2>Популярные достопримечательности</h2>
                 <div class="cards-grid">
                     <article class="landmark-card">
-                        <img src="img/01_sol_iletsk_ozero.jpg" alt="Солёное озеро рядом с Соль-Илецком">
+                        <img src="img/01_sol_iletsk_ozero.jpg" alt="Солёное озеро рядом с Соль-Илецком" loading="lazy">
                         <div class="landmark-card-body">
                             <h3>Соль-Илецкие озёра</h3>
                             <p>Природный объект</p>
@@ -94,7 +108,7 @@
                         </div>
                     </article>
                     <article class="landmark-card">
-                        <img src="img/02_buzuluksky_bor.jpg" alt="Сосновый лес Бузулукского бора">
+                        <img src="img/02_buzuluksky_bor.jpg" alt="Сосновый лес Бузулукского бора" loading="lazy">
                         <div class="landmark-card-body">
                             <h3>Бузулукский бор</h3>
                             <p>Природный объект</p>
@@ -109,7 +123,8 @@
                         </div>
                     </article>
                     <article class="landmark-card">
-                        <img src="img/03_mechet_karavan_saray.jpg" alt="Мечеть Караван-Сарай в Оренбурге">
+                        <img src="img/03_mechet_karavan_saray.jpg" alt="Мечеть Караван-Сарай в Оренбурге"
+                            loading="lazy">
                         <div class="landmark-card-body">
                             <h3>Мечеть Караван-Сарай</h3>
                             <p>Религиозное сооружение</p>
@@ -125,7 +140,7 @@
                     </article>
                     <article class="landmark-card">
                         <img src="img/04_istoriko_kraevedchesky_muzey.jpg"
-                            alt="Здание Оренбургского губернаторского историко-краеведческого музея">
+                            alt="Здание Оренбургского губернаторского историко-краеведческого музея" loading="lazy">
                         <div class="landmark-card-body">
                             <h3>Оренбургский губернаторский историко-краеведческий музей</h3>
                             <p>Музей</p>
@@ -140,7 +155,8 @@
                         </div>
                     </article>
                     <article class="landmark-card">
-                        <img src="img/05_evropa_aziya.jpg" alt="Памятник «Европа — Азия» на берегу реки Урал">
+                        <img src="img/05_evropa_aziya.jpg" alt="Памятник «Европа — Азия» на берегу реки Урал"
+                            loading="lazy">
                         <div class="landmark-card-body">
                             <h3>Памятник «Европа — Азия»</h3>
                             <p>Памятник архитектуры</p>
@@ -157,6 +173,7 @@
                 </div>
             </div>
         </section>
+
         <section class="gallery">
             <div class="container">
                 <h2>Красоты Оренбуржья</h2>
@@ -171,6 +188,12 @@
                     <div class="slides">
                         <article class="slide">
                             <img src="img/01_sol_iletsk_ozero.jpg" alt="Соль-Илецкие озёра">
+                            <label class="slider-arrow slider-arrow-prev" for="slide4">
+                                <span class="visually-hidden">Предыдущий слайд</span>
+                            </label>
+                            <label class="slider-arrow slider-arrow-next" for="slide2">
+                                <span class="visually-hidden">Следующий слайд</span>
+                            </label>
                             <div class="slide-caption">
                                 <h3>Соль-Илецкие озёра</h3>
                                 <p>Солёные озёра с лечебной грязью, куда едут отдыхать и поправлять здоровье.</p>
@@ -178,7 +201,13 @@
                         </article>
 
                         <article class="slide">
-                            <img src="img/02_buzuluksky_bor.jpg" alt="Бузулукский бор">
+                            <img src="img/02_buzuluksky_bor.jpg" alt="Бузулукский бор" loading="lazy">
+                            <label class="slider-arrow slider-arrow-prev" for="slide1">
+                                <span class="visually-hidden">Предыдущий слайд</span>
+                            </label>
+                            <label class="slider-arrow slider-arrow-next" for="slide3">
+                                <span class="visually-hidden">Следующий слайд</span>
+                            </label>
                             <div class="slide-caption">
                                 <h3>Бузулукский бор</h3>
                                 <p>Огромный сосновый лес на песчаных террасах реки Самара с экотропами.</p>
@@ -186,7 +215,13 @@
                         </article>
 
                         <article class="slide">
-                            <img src="img/03_mechet_karavan_saray.jpg" alt="Мечеть Караван-Сарай">
+                            <img src="img/03_mechet_karavan_saray.jpg" alt="Мечеть Караван-Сарай" loading="lazy">
+                            <label class="slider-arrow slider-arrow-prev" for="slide2">
+                                <span class="visually-hidden">Предыдущий слайд</span>
+                            </label>
+                            <label class="slider-arrow slider-arrow-next" for="slide4">
+                                <span class="visually-hidden">Следующий слайд</span>
+                            </label>
                             <div class="slide-caption">
                                 <h3>Мечеть Караван-Сарай</h3>
                                 <p>Памятник архитектуры Оренбурга, построенный в начале XX века.</p>
@@ -194,7 +229,14 @@
                         </article>
 
                         <article class="slide">
-                            <img src="img/04_istoriko_kraevedchesky_muzey.jpg" alt="Губернаторский музей">
+                            <img src="img/04_istoriko_kraevedchesky_muzey.jpg" alt="Губернаторский музей"
+                                loading="lazy">
+                            <label class="slider-arrow slider-arrow-prev" for="slide3">
+                                <span class="visually-hidden">Предыдущий слайд</span>
+                            </label>
+                            <label class="slider-arrow slider-arrow-next" for="slide1">
+                                <span class="visually-hidden">Следующий слайд</span>
+                            </label>
                             <div class="slide-caption">
                                 <h3>Губернаторский музей</h3>
                                 <p>Главный музей области, где собраны история и природа Оренбургского края.</p>
@@ -203,15 +245,86 @@
                     </div>
 
                     <div class="controls">
-                        <label for="slide1"></label>
-                        <label for="slide2"></label>
-                        <label for="slide3"></label>
-                        <label for="slide4"></label>
+                        <label for="slide1"><span class="visually-hidden">Слайд 1</span></label>
+                        <label for="slide2"><span class="visually-hidden">Слайд 2</span></label>
+                        <label for="slide3"><span class="visually-hidden">Слайд 3</span></label>
+                        <label for="slide4"><span class="visually-hidden">Слайд 4</span></label>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="partners">
+            <div class="container">
+                <h2>Наши партнёры</h2>
+                <ul class="partners-list">
+                    <li class="partner">
+                        <span class="partner-mark" aria-hidden="true">С</span>
+                        <div>
+                            <h3>Степной маршрут</h3>
+                            <p>Туристические туры по области</p>
+                        </div>
+                    </li>
+                    <li class="partner">
+                        <span class="partner-mark" aria-hidden="true">К</span>
+                        <div>
+                            <h3>Краеведческое общество</h3>
+                            <p>Проверка исторических данных</p>
+                        </div>
+                    </li>
+                    <li class="partner">
+                        <span class="partner-mark" aria-hidden="true">У</span>
+                        <div>
+                            <h3>Уральский гид</h3>
+                            <p>Экскурсии по Оренбургу</p>
+                        </div>
+                    </li>
+                    <li class="partner">
+                        <span class="partner-mark" aria-hidden="true">Б</span>
+                        <div>
+                            <h3>Турклуб «Бор»</h3>
+                            <p>Походы и экотропы</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.svg" alt="" width="36" height="36">
+                    <span>Открой Оренбуржье</span>
+                </a>
+                <p>Каталог достопримечательностей Оренбургской области от местных жителей и путешественников.</p>
+            </div>
+
+            <nav class="footer-col" aria-label="Разделы сайта">
+                <h3>Разделы</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index_dark.html">Главная (тёмная тема)</a></li>
+                    <li><a href="catalog.html">Каталог достопримечательностей</a></li>
+                    <li><a href="landmark.html">Страница достопримечательности</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-col" aria-label="Аккаунт">
+                <h3>Аккаунт</h3>
+                <ul>
+                    <li><a href="login.html">Войти</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                    <li><a href="admin.html">Администрирование</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Открой Оренбуржье. Все права защищены.</p>
+        </div>
+    </footer>
 
 </body>
 
